@@ -1,0 +1,13 @@
+import numpy as np
+
+X = np.random.random((5,5))
+print(X,'\n')
+
+a = X.mean()
+print('The element-wise mean of the is: \n',a ,'\n')
+
+b = X.std()
+print('The element-wise standard deviation is: \n',b,'\n')
+
+Z = (X - a) / b
+print('The normalized value is: \n', Z)
